@@ -24,7 +24,7 @@ class Aluno():
 
 aluno1 = Aluno('Pedro Marques', 30, "pedro_marques@outlook.com", 9.0, 8.0)
 aluno2 = Aluno("Isadora Farias", 26, "isadora.farias@gmail.com", 9.5, 10.00)
-aluno3 = Aluno("Enzo Diaz", 18, enzo_dias26@hotmail.com, 6.5, 4.5
+aluno3 = Aluno("Enzo Diaz", 18, 'enzo_dias26@hotmail.com', 6.5, 4.5)
 
 lista_alunos = [aluno1, aluno2]
 
