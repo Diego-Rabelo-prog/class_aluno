@@ -1,1 +1,34 @@
 # class_aluno
+
+class Aluno():
+    def __init__(self, nome_aluno, idade_aluno, email_aluno, nota1_aluno, nota2_aluno):
+        self.nome = nome_aluno
+        self.idade = idade_aluno
+        self.email = email_aluno
+        self.nota1 = nota1_aluno
+        self.nota2 = nota2_aluno
+
+    def media_aluno(self):
+        return  (self.nota1 + self.nota2) / 2
+    
+    def status_aluno(self):
+        if self.media_aluno() >= 5.5:
+            return 'APROVADO!'
+        elif self.media_aluno() == 5.0:
+            return 'EM RECUPERAÇÃO!'
+        else:
+            return 'REPROVADO!'
+    
+   
+    def __str__(self):
+        return f"Nome: {self.nome} Idade: {self.idade} E-mail: {self.email}"
+
+
+aluno1 = Aluno('Pedro Marques', 30, "pedro_marques@outlook.com", 9.0, 8.0)
+aluno2 = Aluno("Isadora Farias", 26, "isadora.farias@gmail.com", 9.5, 10.00)
+
+lista_alunos = [aluno1, aluno2]
+
+for i, aluno in enumerate(lista_alunos):
+    print(aluno)
+    print(f"#{i+1} Nome Aluno - {aluno.nome}  Media do aluno - {aluno.media_aluno()} Você está - {aluno.status_aluno()}")
